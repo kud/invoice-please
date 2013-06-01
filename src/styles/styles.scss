@@ -1,0 +1,135 @@
+@import 'compass/css3';
+@import '../bower_components/normalize-scss/normalize';
+@page { size: A4 }
+
+$kud-MainColour: #555;
+$kud-PagePadding: 15px;
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  color: $kud-MainColour;
+  padding: $kud-PagePadding;
+  padding-top: 200px;
+  @include box-sizing(border-box);
+  position: relative;
+}
+
+p {
+  margin: 0 0 5px 0;
+}
+
+/**
+ * Sender part
+ */
+.kud-Sender {
+  position: absolute;
+  left: 15px;
+  top: $kud-PagePadding;
+}
+
+.kud-Sender-heading {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.kud-Sender-title {
+  font-style: italic;
+}
+
+/**
+ * Addressee
+ */
+.kud-Addressee {
+  position: absolute;
+  top: 100px;
+  right: $kud-PagePadding;
+}
+
+.kud-Addressee-heading {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/**
+ * Titles
+ */
+.kud-Titles {
+  position: absolute;
+  right: $kud-PagePadding;
+  top: $kud-PagePadding;
+}
+
+.kud-Titles-heading {
+  font-weight: bold;
+}
+
+/**
+ * Content part
+ */
+.kud-Content-heading {
+  font-weight: bold;
+}
+
+/**
+ * Details
+ */
+.kud-Details {
+  width: 100%;
+  margin: 20px 0;
+
+  th {
+    text-align: left;
+    border: 2px solid $kud-MainColour;
+    border-left: 0px;
+    border-right: 0px;
+  }
+
+  th,
+  td {
+    padding: 5px;
+  }
+
+  tr:nth-child(2) {
+    td {
+      padding-top: 20px;
+    }
+  }
+
+  td:last-child {
+    text-align: right;
+  }
+}
+
+.kud-Details-total {
+  font-weight: bold;
+}
+
+/**
+ * Separator
+ */
+.kud-Separator
+{
+  background: $kud-MainColour;
+  height: 2px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+/**
+ * Little sentence on the bottom on the page, you know
+ */
+.kud-LittleSentence {
+  font-style: italic;
+  position: absolute;
+  bottom: $kud-PagePadding;
+  left: $kud-PagePadding;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "invoice-please",
+  "version": "0.0.0",
+  "description": "Invoice Please!",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jade": "~0.6.0",
+    "grunt-casperjs": "~1.0.6",
+    "grunt-contrib-compass": "~0.2.0",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-open": "~0.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kud/invoice-please.git"
+  },
+  "author": "Erwann Mest",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/kud/invoice-please/issues"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.4.4"
+  }
+}
