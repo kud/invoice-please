@@ -1,7 +1,7 @@
 Invoice please!
 ==============
 
-> Make your invoices so easily.
+  > _Make your invoices so easily._
 
 ## Installation
 
