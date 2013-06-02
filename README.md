@@ -28,3 +28,6 @@ You must modify `src/datas/index.json` to insert your own stuff.
   grunt dist
 
 And that's all! Enjoy your invoice in `dist/invoice.pdf`
+
+---
+Done for you by _kud, member of [@putaindecode](https://github.com/putaindecode)
