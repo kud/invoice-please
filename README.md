@@ -11,7 +11,7 @@ Invoice please!
 
 #### Local
 
-    npm install
+    npm install && bower install
 
 ### Datas
 
@@ -32,4 +32,4 @@ And that's all! Enjoy your invoice in `dist/invoice.pdf`
 
 ---
 
-_Done for you by _kud, member of [@putaindecode](https://github.com/putaindecode)_
+_Done for you by [kud](https://github.com/kud), member of [@putaindecode](https://github.com/putaindecode)_
