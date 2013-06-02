@@ -7,11 +7,11 @@ Make your invoices so easily.
 
 ### Global
 
-  npm install -g bower grunt-cli
+    npm install -g bower grunt-cli
 
 ### Local
 
-  npm install
+    npm install
 
 ## Datas
 
@@ -21,13 +21,15 @@ You must modify `src/datas/index.json` to insert your own stuff.
 
 ### Development
 
-  grunt
+    grunt
 
 ### Distribute
 
-  grunt dist
+    grunt dist
 
 And that's all! Enjoy your invoice in `dist/invoice.pdf`
 
+
 ---
+
 Done for you by _kud, member of [@putaindecode](https://github.com/putaindecode)
