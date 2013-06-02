@@ -5,6 +5,20 @@ Invoice please!
 
 ## Installation
 
+### Requirements
+
+##### Casperjs
+
+On Mac OS X, you simply have to do:
+
+    brew install casperjs
+
+For other platforms, [casperjs.org](http://casperjs.org/).
+
+##### Compass
+
+    gem install compass
+
 #### Global
 
     npm install -g bower grunt-cli
