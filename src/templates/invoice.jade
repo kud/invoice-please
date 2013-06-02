@@ -6,35 +6,35 @@ html(lang="en")
     link(href="/styles/styles.css", rel="stylesheet", type="text/css", media="all")
   body
     section.kud-Sender
-      h2.kud-Sender-heading Erwann Mest
-      p.kud-Sender-title Developer
-      p 72 bis Avenue de Flandre Immeuble C
-      p 75019 PARIS
-      p kud.io
+      h2.kud-Sender-heading= sender.name
+      p.kud-Sender-title= sender.title
+      p= sender.address
+      p= sender.postalCode + " " + sender.city
+      p= sender.site
 
     section.kud-Titles
-      p.kud-Titles-heading Facture n° 2014-04
-      p Date : 04 avril 2013
+      p.kud-Titles-heading= "Facture n°" + titles.invoiceNumber
+      p= "Date : " + titles.date
 
     section.kud-Addressee
-      p.kud-Addressee-heading Cafffeine
-      p 47 rue Marcel Dassault
-      p 92100 Boulogne-Billancourt
+      p.kud-Addressee-heading= addressee.name
+      p= addressee.address
+      p= addressee.postalCode + " " + addressee.city
 
     div.kud-Separator
 
     section.kud-Content
       h2.kud-Content-heading Objet du devis
-      p Création de la Homepage «Dassault - 50 years of passion and innovation»
+      p= content.topic
 
       h2.kud-Content-heading Livrables
-      p 1 pages HTML comprenant les spécifications techniques suivantes :
+      p= content.deliverable.description + " :"
       ul
-        li CSS 3
-        li Utilisation de la bibliothèque jQuery pour les animations Javascript - Formats des images adaptés en fonction des besoins : PNG, JPG, GIF
+        each point in content.deliverable.points
+          li= point
 
       h2.kud-Content-heading Cession des droits d'auteur
-      p Droit d’exploitation de la création valable sur le territoire français, sans limite de temps.
+      p= content.copyrights
 
       table.kud-Details
         tr
@@ -53,4 +53,4 @@ html(lang="en")
     div.kud-Separator
 
     section.kud-LittleSentence
-      p TVA non applicable, article 293B du code général des impôts.
+      p= littleSentence
