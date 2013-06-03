@@ -27,9 +27,9 @@ For other platforms, [casperjs.org](http://casperjs.org/).
 
     npm install && bower install
 
-### Datas
+### Data
 
-You must modify `src/datas/index.json` to insert your own stuff.
+You must modify `src/data/index.json` to insert your own stuff.
 
 ## Runtime
 
