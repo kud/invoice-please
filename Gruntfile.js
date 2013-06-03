@@ -13,7 +13,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json'),
-    data: grunt.file.readJSON('src/datas/index.json'),
+    data: grunt.file.readJSON('src/data/index.json'),
 
     open : {
       build: {
