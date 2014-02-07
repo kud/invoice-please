@@ -1,6 +1,4 @@
-.sass-cache
-node_modules
-dist
-build
-src/bower_components
-
+dist/*
+!dist/.gitkeep
+data/*
+!data/.gitkeep

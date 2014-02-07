@@ -1,48 +1,19 @@
-Invoice please!
-==============
+# Invoice please!
 
-  > _Make your invoices so easily._
+> _Make your invoices so easily._
 
 ## Installation
 
-### Requirements
+### Mac OS X
 
-##### Casperjs
+```
+$ make install
+```
 
-On Mac OS X, you simply have to do:
+### Others
 
-    brew install casperjs
-
-For other platforms, [casperjs.org](http://casperjs.org/).
-
-##### Compass
-
-    gem install compass
-
-#### Global
-
-    npm install -g bower grunt-cli
-
-#### Local
-
-    npm install && bower install
-
-### Data
-
-You must modify `src/data/index.json` to insert your own stuff.
-
-## Runtime
-
-#### Development
-
-    grunt
-
-#### Distribute
-
-    grunt dist
-
-And that's all! Enjoy your invoice in `dist/invoice.pdf`
-
+- install pandoc
+- install latex
 
 ---
 

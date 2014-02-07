@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html$if(lang)$ lang="$lang$"$endif$>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    $for(author-meta)$
+    <meta name="author" content="$author-meta$">
+    $endfor$
+    <title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    $for(css)$
+    <link rel="stylesheet" href="$css$">
+    $endfor$
+  </head>
+  <body>
+  $body$
+  </body>
+</html>
